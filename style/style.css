@@ -9,6 +9,8 @@ main{
     
 }
 .wrapper{
+    width: 100%;
+    height: 100%;
     padding: 1vw;
     display: flex;
     justify-content: space-evenly;
@@ -16,17 +18,37 @@ main{
     gap: 3vw;
 }
 .card{
+    cursor: pointer;
     padding: 1px;
     width: 323.2px;
-    min-width: 200px;
-    height: 204px;
-    border:1px solid grey;
     border-radius:1vw;
+    background: PaleTurquoise	;
 }
 .part-image{
-    border-top-left-radius: 1vw;
-    border-top-right-radius: 1vw;
     width: 320px;
     height: 150px;
-    border:1px solid red;
+}
+.part-info{
+text-align: center;
+width: 323px; 
+overflow-x: auto;
+}
+h1 {
+    white-space: nowrap;
+    overflow-x: hidden;
+    position: relative;
+    animation: train 10s linear infinite;
+  }
+  
+  @keyframes train {
+    20% {
+      transform: translateX(0);
+    }
+    80% {
+      transform: translateX(-100%);
+    }
+  }
+  
+p{
+margin-bottom: 15px;
 }
