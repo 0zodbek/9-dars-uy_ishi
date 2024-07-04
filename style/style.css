@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main{
+    width: 100%;
+    
+}
+.wrapper{
+    padding: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+.card{
+    padding: 1px;
+    width: 323.2px;
+    min-width: 200px;
+    height: 204px;
+    border:1px solid grey;
+    border-radius:1vw;
+}
+.part-image{
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    width: 320px;
+    height: 150px;
+    border:1px solid red;
+}
