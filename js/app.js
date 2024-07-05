@@ -11,6 +11,7 @@ return`
             </div>
 `
 }
+const loader = document.querySelector('#loader')
 const wrapper = document.querySelector('#wrapper')
 document.addEventListener('DOMContentLoaded',function() {
     fetch("https://cars-pagination.onrender.com/all-countries",{
@@ -24,7 +25,8 @@ document.addEventListener('DOMContentLoaded',function() {
     })
     
     .then(function(data){
-        console.log(data);
+        wrapper.style.display = 'flex'     
+        //   console.log(data);
     data.length > 0 && data.forEach(function(el){
     let card = createCard(el)
     wrapper.innerHTML += card;
@@ -34,7 +36,9 @@ document.addEventListener('DOMContentLoaded',function() {
     .catch(err=>{
        console.log(err);
     })
-
+    .finally(function(){
+    loader.style.display = 'none'
+    })
 
 
 })
