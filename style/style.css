@@ -27,6 +27,7 @@ height: 100%;
     gap: 3vw;
     display: none;
 }
+
 .card{
     cursor: pointer;
     padding: 1px;
@@ -61,4 +62,14 @@ h1 {
   
 p{
 margin-bottom: 15px;
+}
+/* overlay */
+.overlay{
+  display: none;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+width: 100%;
+background: rgba(0,0,0,0.5);
 }
